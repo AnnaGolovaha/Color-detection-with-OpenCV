@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-
+#вычисление крайних значений на цилиндре hsv
 def get_limits(color):
     c = np.uint8([[color]])  # BGR значения
     hsvC = cv2.cvtColor(c, cv2.COLOR_BGR2HSV)
